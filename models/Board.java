@@ -10,13 +10,20 @@ public class Board {
     public Board(int size) {
         this.size = size;
         this.cells = new ArrayList<>();
+        // this is just generating the board
         for (int i = 0; i < size; i++) {
-            List<Cell> row = new ArrayList<>();
+            List<Cell> row = new ArrayList<>(); // this is forr the creation of the rows
+            this.cells.add(row);// rows added inside the board
             for (int j = 0; j < size; j++) {
-                cells.get(i).add(new Cell(i, j));
+                cells.get(i).add(new Cell(i, j)); // cells added inside the row
             }
-            cells.add(row);
         }
+        // for (int i = 0; i < size; i++) {
+        // cells.add(new ArrayList<>());
+        // for (int j = 0; j < size; j++) {
+        // cells.get(i).add(new Cell(i, j));
+        // }
+        // }
     }
 
     // put all the getters and setters

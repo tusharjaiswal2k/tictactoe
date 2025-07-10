@@ -25,6 +25,34 @@ public class Game {
         // TODO Auto-generated constructor stub
     }
 
+    // get and setters for gamestate
+    public GameState getGameState() {
+        return gameState;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public void setGameState(GameState gameState) {
+        this.gameState = gameState;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+
+    @Override
+    public String toString() {
+        return "Game [board=" + board + ", players=" + players + ", gameState=" + gameState + ", winner=" + winner
+                + ", nextMovePlayerIndex=" + nextMovePlayerIndex + ", moves=" + moves + ", PlayerBoarda=" + PlayerBoarda
+                + "]";
+    }
+
     public static Builder builder() {
         return new Builder();
     }
