@@ -18,12 +18,7 @@ public class Board {
                 cells.get(i).add(new Cell(i, j)); // cells added inside the row
             }
         }
-        // for (int i = 0; i < size; i++) {
-        // cells.add(new ArrayList<>());
-        // for (int j = 0; j < size; j++) {
-        // cells.get(i).add(new Cell(i, j));
-        // }
-        // }
+
     }
 
     // put all the getters and setters
